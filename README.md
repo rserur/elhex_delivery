@@ -23,7 +23,7 @@ be found at [https://hexdocs.pm/elhex_delivery](https://hexdocs.pm/elhex_deliver
 
 2. Start GenServer data parser:
   ```
-    iex> ElhexDelivery.PostalCode.Store.start_link
+    iex> ElhexDelivery.PostalCode.Supervisor.start_link
     {:ok, #PID<0.109.0>}
   ```
 3. Get geolocation data from GenServer store:
