@@ -20,13 +20,7 @@ be found at [https://hexdocs.pm/elhex_delivery](https://hexdocs.pm/elhex_deliver
 ## Usage
 
 1. Start Application: `$ iex -S mix`
-
-2. Start GenServer data parser:
-  ```
-    iex> ElhexDelivery.PostalCode.Supervisor.start_link
-    {:ok, #PID<0.109.0>}
-  ```
-3. Get geolocation data from GenServer store:
+2. Get geolocation data from GenServer store:
   ```
     iex> ElhexDelivery.PostalCode.Store.get_geolocation("02130")
     {42.309174, -71.113835}
